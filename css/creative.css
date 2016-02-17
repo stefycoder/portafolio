@@ -1,0 +1,57 @@
+/* Inserta tu codigo CSS aqui */
+.prt{
+	width: 100%;
+	background-attachment: fixed;
+}
+.caja{
+	margin: 0;
+	padding: 0;
+}
+.prt:hover{
+               -moz-transform: scale(1);
+               -webkit-transform: scale(1);
+               -o-transform: scale(1,2));
+               -ms-transform: scale(1);
+               transform: scale(1.05);            
+} 
+#github{
+	background: #222222;
+	padding:2%;
+}
+#github p{
+	color: white;
+	font-size: 2.2rem;
+	margin-bottom: 1%;
+}
+#github a{
+	color: #222222;
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-weight: bold;
+	padding: 1% 2%;
+	border-radius: 20px;
+	background: white;
+}
+.pie{
+	padding: 2%;
+}
+hr{
+	width: 50px;
+	height: 2px;
+	background: #F05F40;
+}
+.pie p{
+	padding-left: 25%;
+	padding-right: 25%;
+}
+.pie i{
+	font-size: 30px;
+}
+.email{
+	color: #F05F40;
+}
+@media (min-width: 768px) {
+	.prt .fondo{
+		background-color: rgba(255,160,122);
+	}
+}
