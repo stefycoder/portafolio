@@ -1,23 +1,75 @@
 /* Inserta tu codigo CSS aqui */
-/*HEADER-NAVEGADOR*/
-.header {
+/*HEADER-NAVEGADOR
+.nav-header {
 	background: rgba(255, 255, 255, 0.09);
 	border: 1px solid rgba(255, 255, 255, 0.27);
 	padding: 1%;
+	position: fixed;
 }
-.header nav a {
+.nav-header li a {
 	font-size: 1em;
 	font-style: none;
 	color: rgba(255, 255, 255, 0.67);
-	padding-left: 5%;	
+	text-decoration: none;	
 }
-
+header nav ul{
+	list-style:none;
+	padding-left: 10%;
+}.nav-portafolio {
+	background: rgba(255, 255, 255, 0.09);
+	border: 1px solid rgba(255, 255, 255, 0.27);
+	padding: 1%;
+	position: fixed;
+}
+.nav-portafolio nav a {
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.67);
+	padding-left: 5%;
+	text-decoration: none;
+}
+*/
+header{
+	background: rgba(255, 255, 255, 0.18);
+	border: 1px solid rgba(255, 255, 255, 0.27);
+	position:fixed;
+	width: 100%;
+	z-index: 1;
+	height: 52px;
+}
+.navbar-default {
+    background-color: transparent;
+    }
+.navbar-default .navbar-brand {
+    color: #f5f5f5;
+}
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+    border:none;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgba(0,0,0,.0001);
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: rgba(206, 57, 54, 0.99);
+}
+ .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color:white;
+    background-color: #F05F40;
+    }  
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    }
 /*--bg-header--*/
 .bg-header {
 	background: url(../img/header.jpg) no-repeat;
 	background-attachment: fixed;
 	height: 100vh;
 	background-size: cover;
+	width: 100%;
 }
 .text-header{
 	text-align: center;
@@ -30,30 +82,34 @@
 	padding: 22% 0 2% 0;
 }
 .text-header p{
-	padding: 2% 3% 5%;
+	padding: 2% 10% 10%;
 	font-size: 1.2em;
+	color:rgba(255, 255, 255, 0.79);
 }
-.button{
+.text-header a{
 	border:1px solid #F05F40;
 	background: #F05F40;
+	padding: 1% 2%;
+	border-radius: 30px;
+	  background: #F05F40;
+
+}
+.button{
+	text-decoration: none;
+	color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    background: #F05F40;
 }
 
 
 /*NAVEGADOR-DEL-PORTAFOLIO*/
 .portafolio {
 	background: #F05F40;
+	padding-top: 5%;
 }
-.nav-portafolio {
-	background: rgba(255, 255, 255, 0.09);
-	border: 1px solid rgba(255, 255, 255, 0.27);
-	padding: 1%;
-}
-.nav-portafolio nav a {
-	font-size: 1em;
-	color: rgba(255, 255, 255, 0.67);
-	padding-left: 5%;
-	text-decoration: none;
-}
+
 .perfil {
 	color:white;
 	padding-bottom: 8%;
@@ -126,8 +182,9 @@
 }
 hr{
 	width: 50px;
-	height: 2px;
+	height: 3px;
 	background: #F05F40;
+	border: none;
 }
 .pie i{
 	font-size: 30px;
@@ -156,5 +213,8 @@ hr{
 	}
 	.pie p{
 		font-size: 1rem;
+	}
+	.text-header h2{
+		font-size: 2.7rem;
 	}
 }
