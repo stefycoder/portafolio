@@ -15,6 +15,7 @@
 /*--bg-header--*/
 .bg-header {
 	background: url(../img/header.jpg) no-repeat;
+	background-attachment: fixed;
 	height: 100vh;
 	background-size: cover;
 }
@@ -57,20 +58,50 @@
 	color:white;
 	padding-bottom: 8%;
 }
-.prt{
-	width: 100%;
-	background-attachment: fixed;
+.service{
+	padding: 3% 15% 3% 15%;
 }
-.caja{
-	margin: 0;
-	padding: 0;
+.service i{
+	color:#F05F40;
+	font-size: 5rem;
 }
-.prt:hover{
+.service h3{
+	font-size: 2rem;
+}
+.service p{
+	font-size: 1.2rem;
+	color: #777777;
+}
+.caja1{
+	background:url(../img/portfolio/1.jpg)no-repeat;
+}
+.caja2{
+	background:url(../img/portfolio/2.jpg)no-repeat;
+}
+.caja3{
+	background:url(../img/portfolio/3.jpg)no-repeat;
+}
+.caja4{
+	background:url(../img/portfolio/4.jpg)no-repeat;
+}
+.caja5{
+	background:url(../img/portfolio/5.jpg)no-repeat;
+}
+.caja6{
+	background:url(../img/portfolio/6.jpg)no-repeat;
+}
+.size{
+	background-size: 100%;
+	height: 37vh;
+	margin:0;
+	padding: 0;	
+}
+.size:hover{
                -moz-transform: scale(1);
                -webkit-transform: scale(1);
                -o-transform: scale(1,2));
                -ms-transform: scale(1);
-               transform: scale(1.05);            
+               transform: scale(1.05);          
 } 
 #github{
 	background: #222222;
@@ -91,16 +122,12 @@
 	background: white;
 }
 .pie{
-	padding: 2%;
+	padding: 2% 25%;
 }
 hr{
 	width: 50px;
 	height: 2px;
 	background: #F05F40;
-}
-.pie p{
-	padding-left: 25%;
-	padding-right: 25%;
 }
 .pie i{
 	font-size: 30px;
@@ -108,8 +135,26 @@ hr{
 .email{
 	color: #F05F40;
 }
-@media (min-width: 768px) {
-	.prt .fondo{
-		background-color: rgba(255,160,122);
+@media (max-width: 768px) {
+	.fondo{
+		background-color: rgba(240,95,64,0.8);
+		background-size: 100%;
+		height: 29vh;
+		color:white;
+	}
+	.fondo h2{
+		font-weight: bold;
+		padding: 6%;
+		margin: 0px;
+	}
+	.size {
+	    background-size: 100%;
+	    height: 29vh;
+	}
+	.pie{
+		padding: 0;
+	}
+	.pie p{
+		font-size: 1rem;
 	}
 }
